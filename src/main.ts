@@ -1,14 +1,24 @@
 
-// const sleep = (milliseconds: number) => {
-//     return new Promise(resolve => setTimeout(resolve, milliseconds));
-// }
+const sleep = (milliseconds: number) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
 
 
+function sum() {
 
+}
 
-// async function main() {
+async function consoleYo() {
     for (let x = 0; x < 10; x++) {
         console.log("!!!!!!!!!!Yo!!!!!!!!!");
-        // await sleep(1000);
+        sum();
+        await sleep(1000);
+
     }
-// }
+}
+
+function main() {
+    consoleYo();
+}
+
+main();
