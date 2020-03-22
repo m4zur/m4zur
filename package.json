@@ -1,0 +1,24 @@
+{
+    "name": "secret-squad-bot-tg",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index",
+    "private": true,
+    "scripts": {
+        "build": "npm i && rm -fr dist && tsc",
+        "compile": "tsc",
+        "test": "nodemon --delay 3 --watch settings.json --exec npm start",
+        "start": "tsc && ts-node-dev dist/src/main",
+        "module": "ts-node-dev src/module.ts"
+    },
+    "dependencies": {
+        "@types/node": "^12.7.11",
+        "@types/typescript": "^2.0.0",
+        "dotenv": "^8.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.10",
+        "ts-node-dev": "^1.0.0-pre.32",
+        "typescript": "^3.3.3333"
+    }
+}
